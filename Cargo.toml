@@ -1,0 +1,15 @@
+[package]
+name = "protocol-v2-from-spec-rs"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "Federating directory node for AIMarket Protocol v2, written from the specification. An operator can run it and hand the process to someone else."
+
+[dependencies]
+base64 = "0.22"
+ed25519-dalek = { version = "2", features = ["rand_core"] }
+rand_core = { version = "0.6", features = ["getrandom"] }
+sha2 = "0.10"
+tiny_http = "0.12"
+ureq = "2"
+url = "2"
